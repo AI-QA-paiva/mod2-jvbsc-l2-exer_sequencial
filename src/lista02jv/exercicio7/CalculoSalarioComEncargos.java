@@ -20,12 +20,11 @@ public class CalculoSalarioComEncargos {
         double calcIprf = (calcSalario * 0.11);
         double calcLiqui = (calcSalario-calcInss-calcSind-calcIprf);
 
-        System.out.println("Você receberá o Salário Bruto no total de: R$ " + calcSalario);
-        System.out.println("Será descontato o valor de : R$ " + calcInss + " referente ao INSS");
-        System.out.println("Será descontato o valor de : R$ " + calcSind + " referente a contribuição Sindical");
+        System.out.printf("Você receberá o Salário Bruto no total de: R$ %.2f \n",calcSalario);
+        System.out.printf("Será descontato o valor INSS de : R$ %.2f\n",calcInss);
+        System.out.printf("Será descontato o valor Contribuição Sindical de : R$ %.2f\n",calcSind);
 
-
-        System.out.println("Descontados todos os encargos, você receberá o Salário Liquido no total de : R$ " + calcLiqui);
+        System.out.printf("Descontados todos os encargos, você receberá o Salário Liquido no total de : R$ %.2f", calcLiqui);
 
     }
 
